@@ -56,9 +56,7 @@ def tokens(
     }
 
     while True:
-        print(url, req_json)
         response = tools.try_req_json(url=url, req_json=req_json)
-        print(response)
         token_list, last_post_ts, req_json["pagination_data"] = (
             extract_tokens_info(response=response)
         )
@@ -71,7 +69,7 @@ def tokens(
         counter += 1
         print(f"Page: {counter}, timestamp: {last_post_ts}")
 
-        if counter == 100 or yesterday > int(last_post_ts):
+        if counter == 1 or yesterday > int(last_post_ts):
             break
 
     # End of while loop
