@@ -30,6 +30,13 @@ cd Scraping_Real_Estate_Divar_API
 ```
 pip install -r requirements.txt
 ```
+## Database Setup
+Before running the scraper, you need to create the database and tables. Follow these steps:
+
+1. Create the Database:
+   Create a database named real_estate in MySQL. If you want to use other database management systems, you need to modify the model.py file accordingly.
+3. Create Tables:
+    Create tables based on the 0_RealEstate_Table_Structures_MySQL_Dump.sql file.
 ## Environment Variables
 * Create a .env file in the project root directory.
 * To get access to the necessary environment variables, please contact me directly.
