@@ -26,7 +26,14 @@ git clone https://github.com/SamEag1e/Scraping_Real_Estate_Divar_API.git
 ```
 cd Scraping_Real_Estate_Divar_API
 ```
-3. Install the required dependencies:
+3. Create a virtual environment:
+```
+python -m venv env
+```
+4. Activate the virtual environment:
+  * On Windows: ```.\env\Scripts\activate```
+  * On macOS and Linux: ```source env/bin/activate```
+5. Install the required dependencies:
 ```
 pip install -r requirements.txt
 ```
